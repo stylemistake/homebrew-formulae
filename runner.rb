@@ -4,6 +4,9 @@ class Runner < Formula
   url "https://github.com/stylemistake/runner/archive/v0.8.0.tar.gz"
   sha256 "0b8e0dd41c42a278fc6b78a83ff4f2933317e153bf53ef2d4c07fb36de4bf8fe"
 
+  depends_on "bash" => :recommended
+  depends_on "coreutils" => :recommended
+
   def install
     prefix.install "src"
     prefix.install "completion"
